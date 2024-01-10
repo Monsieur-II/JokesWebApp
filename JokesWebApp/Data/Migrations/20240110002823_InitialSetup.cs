@@ -18,7 +18,7 @@ namespace JokesWebApp.Data.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     JokeQuesion = table.Column<string>(type: "VARCHAR(MAX)", nullable: true),
                     JokeAnswer = table.Column<string>(type: "VARCHAR(MAX)", nullable: true),
-					UserName = table.Column<string>(type: "VARCHAR(MAX)", nullable: true)
+					
                 },
                 constraints: table =>
                 {
