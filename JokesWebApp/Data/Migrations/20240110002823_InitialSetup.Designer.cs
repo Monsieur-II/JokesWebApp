@@ -26,11 +26,11 @@ namespace JokesWebApp.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("JokeAnswer")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("JokeAnswer")
+                        .HasColumnType("TEXT");
 
-                    b.Property<int>("JokeQuesion")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("JokeQuesion")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
