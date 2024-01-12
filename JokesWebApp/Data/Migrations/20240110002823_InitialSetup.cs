@@ -12,25 +12,26 @@ namespace JokesWebApp.Data.Migrations
         {
             migrationBuilder.CreateTable(
                 name: "Joke",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "INTEGER", nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
-                    JokeQuesion = table.Column<string>(type: "VARCHAR(MAX)", nullable: true),
-                    JokeAnswer = table.Column<string>(type: "VARCHAR(MAX)", nullable: true),
-					
-                },
+                columns: table =>
+                    new
+                    {
+                        Id = table
+                            .Column<int>(type: "INTEGER", nullable: false)
+                            .Annotation("Sqlite:Autoincrement", true),
+                        JokeQuesion = table.Column<string>(type: "VARCHAR(MAX)", nullable: true),
+                        JokeAnswer = table.Column<string>(type: "VARCHAR(MAX)", nullable: true),
+                    },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Joke", x => x.Id);
-                });
+                }
+            );
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "Joke");
+            migrationBuilder.DropTable(name: "Joke");
         }
     }
 }
