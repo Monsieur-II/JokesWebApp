@@ -15,7 +15,7 @@ LaughHub is a web app designed to bring joy and humour into your daily life. Whe
 To get started with LaughHub, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/Monsieur-II/JokesWebApp`
-2. Navigate to the project directory: `cd JokesWebApp`
+2. Navigate to the project directory: `cd JokesWebApp/JokesWebApp`
 3. Run `dotnet run` on your terminal. You should see: `Now listening on: http://localhost:5027` or a similar link
 4. Open the link on you web browser.
 
